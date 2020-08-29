@@ -6,6 +6,8 @@ import Alert from './components/layout/Alert';
 import Home from './components/page/Home'
 import GithubState from './context/github/action';
 import AlertState from './context/alert/action';
+import User from './components/user';
+
 
 import './App.css';
 
@@ -20,6 +22,7 @@ const App = () => {
               <Alert />
               <Switch>
                 <Route exact path='/' component={Home} />
+                <Route exact path='/user/:login' component={User} />
               </Switch>
             </div>
           </div>
